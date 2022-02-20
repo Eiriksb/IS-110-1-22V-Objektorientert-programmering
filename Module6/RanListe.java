@@ -13,7 +13,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 /**
-   * Hovedklasse.
+   * Hovedklasse
    */
 
 public class RanListe {
@@ -34,17 +34,17 @@ public class RanListe {
     int randomNumNS = (int)(Math.random()*x); 
 
     /**
+   *  Returnerer Random Non static + 0 eller nummer som blir lagt inn
    * @return Dette er en funskjon som returnerer verdien av randomNumNS (non-static)
    * @param y er et nummer som blir lagt til senere i funksjonen.
-   * Returnerer Random Non static + 0 eller nummer som blir lagt inn
-   */
+   **/
     public int NonStatic(int y){
         
         return randomNumNS + y;
     }
 
     /**
-   * Denne metoden lager en et par lister.
+   * Denne metoden lager et par lister som bruker HashMap, HashSet og random.
    *  x Dette er en int som er final som brukes i random funksjonene.
    *  Denne funskjonen returnerer foerst en liste over tall som blir funnet i HashSettet 1-10.
    *  Saa en Liste over tilfeldige tall.
@@ -53,7 +53,7 @@ public class RanListe {
    */
 
     public static void main(String[] args) {
-
+        
         //Lager en HashMap som tar inn en int og en string
         HashMap<Integer, String> IdNavn = new HashMap<Integer, String>();
 
