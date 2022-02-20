@@ -1,24 +1,56 @@
+/**
+* RanListe er bare demonstrasjon av String, Random, HashMap, HashSet.
+* @return Ganske enkelt program som skriver ut til terminal med de forskjellige listene.
+*
+* @author  Eirik Silseth Bjørdal
+* @version 1.0
+* @since   20.02.2022 
+*/
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
+/**
+   * Hovedklasse.
+   */
+
 public class RanListe {
 
-    //final kan ikke endres
+    /**
+   * @param x Dette er en int som er final som brukes i random funksjonene.
+   */
     final static int x = 100;   
 
-    //Random nummer static
+    /**
+   * @param randomNumS er et static random nummer generator som tar in x, som vil si den lager en tilfedlig nummer mellom 0-99
+   */
     static int randomNumS = (int)(Math.random()*x); 
 
-    //random nummer ikke static
+    /**
+   * @param randomNumS er et ikke static random nummer generator som tar in x, som vil si den lager en tilfedlig nummer mellom 0-99
+   */
     int randomNumNS = (int)(Math.random()*x); 
 
-    //int klasse som returnerer en y verdi som består av Non static random + y
+    /**
+   * @return Dette er en funskjon som returnerer verdien av randomNumNS (non-static)
+   * @param y er et nummer som blir lagt til senere i funksjonen.
+   * Returnerer Random Non static + 0 eller nummer som blir lagt inn
+   */
     public int NonStatic(int y){
         
         return randomNumNS + y;
     }
+
+    /**
+   * Denne metoden lager en et par lister.
+   *  x Dette er en int som er final som brukes i random funksjonene.
+   *  Denne funskjonen returnerer foerst en liste over tall som blir funnet i HashSettet 1-10.
+   *  Saa en Liste over tilfeldige tall.
+   *  Saa en HashMap liste med navn. 
+   * @param args args
+   */
 
     public static void main(String[] args) {
 
